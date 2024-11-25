@@ -17,9 +17,10 @@ class LibraryServiceProvider extends ServiceProvider
     /**
      * Bootstrap services.
      */
-    public function boot()
     {
-        // Load routes from the library's web.php
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+        // Publish routes
+        $this->publishes([
+            __DIR__ . '/../routes/web.php' => base_path('routes/vendor/library-web.php'),
+        ], 'library-routes');
     }
 }
