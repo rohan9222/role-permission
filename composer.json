@@ -1,0 +1,15 @@
+{
+    "name": "rohan/library",
+    "description": "A custom Laravel library",
+    "autoload": {
+        "psr-4": {
+            "Rohan\\Library\\": "src/"
+        },
+        "classmap": [
+            "src/Providers"
+        ]
+    },
+    "require": {
+        "php": "^8.0"
+    }
+}
