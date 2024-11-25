@@ -3,28 +3,23 @@
 namespace Rohan\Library\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Route;
 
 class LibraryServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        // রাউট ফাইল রেজিস্টার করা
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
+     * Register services.
      */
     public function register()
     {
-        //
+        // You can register bindings or configuration here if needed.
+    }
+
+    /**
+     * Bootstrap services.
+     */
+    public function boot()
+    {
+        // Load routes from the library's web.php
+        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
     }
 }
