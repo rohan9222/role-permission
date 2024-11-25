@@ -18,6 +18,13 @@
             "src/Providers"
         ]
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rohan\\Library\\Providers\\LibraryServiceProvider"
+            ]
+        }
+    },
     "require": {
         "php": "^8.2",
         "illuminate/support": "^10.0"
