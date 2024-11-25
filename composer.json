@@ -1,5 +1,5 @@
 {
-    "name": "rohan9222/Role-Permission",
+    "name": "rohan9222/role-permission",
     "description": "A custom Laravel library",
     "autoload": {
         "psr-4": {
