@@ -10,6 +10,7 @@
             "role": "Developer"
         }
     ],
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Rohan\\Library\\": "src/"
@@ -24,6 +25,11 @@
                 "Rohan\\Library\\Providers\\LibraryServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --tag=library-routes --force"
+        ]
     },
     "require": {
         "php": "^8.2",
