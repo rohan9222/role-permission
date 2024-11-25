@@ -16,9 +16,12 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/rohan9222/library"
+            "url": "https://github.com/rohan9222/Role-Permission"
         }
     ],
+    "require": {
+        "rohan9222/Role-Permission": "*"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
